@@ -10,7 +10,7 @@
             bool wasHit = false;
             int round = 1;
 
-            Console.WriteLine("Welcome to Hunting The Manticore.\nYour job is to defend the city of Consolas against the Uncoded One's airship, the Manticore.\nPress Enter to play or type in 'exit' to abort.");
+            Console.WriteLine("Welcome to Hunting The Manticore.\nYour job is to defend the city of Consolas against the Uncoded One's airship, the Manticore.\nPress Enter to play or type in 'exit' to abort. ");
             string readResult = Console.ReadLine();
             if (readResult == "exit")
                 return;
