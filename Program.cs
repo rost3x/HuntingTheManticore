@@ -1,12 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace HuntingTheManticore
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            int cityHealth = 15;
+﻿            int cityHealth = 15;
             int manticoreHealth = 10;
             int manticoreDistance;
             int cannonRange;
@@ -37,7 +29,7 @@ namespace HuntingTheManticore
                 Console.WriteLine($"The cannon is expected to deal {CannonDamage(round)} damage this round");
                 Console.Write("Enter desired cannon range: ");
                 int.TryParse(Console.ReadLine(),out cannonRange);
-                hitResult(cannonRange);
+                HitResult(cannonRange);
                 Console.WriteLine("---------------------------------------------------------");
                 round++;
             } while (manticoreHealth > 0 && cityHealth > 0);
@@ -65,7 +57,7 @@ namespace HuntingTheManticore
                     return 1;
             }
 
-            void hitResult(int cannonRange)
+            void HitResult(int cannonRange)
             {
                 if (cannonRange == manticoreDistance)
                 {
@@ -89,9 +81,3 @@ namespace HuntingTheManticore
                     cityHealth -= 1;
                 }
             }
-
-        }
-
-        
-    }
-}
